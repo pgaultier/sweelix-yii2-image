@@ -7,7 +7,7 @@
  * @author    Philippe Gaultier <pgaultier@sweelix.net>
  * @copyright 2010-2014 Sweelix
  * @license   http://www.sweelix.net/license license
- * @version   XXX
+ * @version   1.0.0
  * @link      http://www.sweelix.net
  * @category  components
  * @package   sweelix.yii2.image.components
@@ -50,11 +50,11 @@ use Yii;
  * @author    Philippe Gaultier <pgaultier@sweelix.net>
  * @copyright 2010-2014 Sweelix
  * @license   http://www.sweelix.net/license license
- * @version   XXX
+ * @version   1.0.0
  * @link      http://www.sweelix.net
  * @category  components
  * @package   sweelix.yii2.components
- * @since     XXX
+ * @since     1.0.0
  */
 class Config extends Component {
 	/**
@@ -67,7 +67,7 @@ class Config extends Component {
 	 * @param integer $mode can be performance, normal or debug
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function setCachingMode($mode) {
 		$this->_cachingMode = $mode;
@@ -76,7 +76,7 @@ class Config extends Component {
 	 * Caching mode getter @see Image for further details
 	 *
 	 * @return integer
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function getCachingMode() {
 		return $this->_cachingMode;
@@ -91,7 +91,7 @@ class Config extends Component {
 	 * @param string $urlSeparator separator used to build Urls
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function setUrlSeparator($urlSeparator) {
 		$this->_urlSeparator = $urlSeparator;
@@ -100,7 +100,7 @@ class Config extends Component {
 	 * Url separator getter @see Image::urlSeparator for further details
 	 *
 	 * @return string
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function getUrlSeparator() {
 		return $this->_urlSeparator;
@@ -115,7 +115,7 @@ class Config extends Component {
 	 * @param string $cachePath real path (not namespace path)
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function setCachePath($cachePath) {
 		$this->_cachePath = $cachePath;
@@ -124,7 +124,7 @@ class Config extends Component {
 	 * Cache path getter @see Image::cachePath for further details
 	 *
 	 * @return string
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function getCachePath() {
 		return Yii::getAlias($this->_cachePath);
@@ -139,7 +139,7 @@ class Config extends Component {
 	 * @param string $errorImage error image name
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function setErrorImage($errorImage) {
 		$this->_errorImage = $errorImage;
@@ -148,7 +148,7 @@ class Config extends Component {
 	 *  Error image getter @see Image::errorImage for further details
 	 *
 	 * @return string
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function getErrorImage() {
 		return Yii::getAlias($this->_errorImage);
@@ -163,7 +163,7 @@ class Config extends Component {
 	 * @param integer $quality image quality default to 90
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function setQuality($quality) {
 		$this->_quality = $quality;
@@ -172,7 +172,7 @@ class Config extends Component {
 	 * Cache path getter @see Image::cachePath for further details
 	 *
 	 * @return integer
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function getQuality() {
 		return $this->_quality;
@@ -182,7 +182,7 @@ class Config extends Component {
 	 * Init module with parameters @see CApplicationComponent::init()
 	 *
 	 * @return void
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function init() {
 		parent::init();

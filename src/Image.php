@@ -7,7 +7,7 @@
  * @author    Philippe Gaultier <pgaultier@sweelix.net>
  * @copyright 2010-2014 Sweelix
  * @license   http://www.sweelix.net/license license
- * @version   XXX
+ * @version   1.0.0
  * @link      http://www.sweelix.net
  * @category  web
  * @package   sweelix.yii2.image.web
@@ -25,11 +25,11 @@ use Yii;
  * @author    Philippe Gaultier <pgaultier@sweelix.net>
  * @copyright 2010-2014 Sweelix
  * @license   http://www.sweelix.net/license license
- * @version   XXX
+ * @version   1.0.0
  * @link      http://www.sweelix.net
  * @category  web
  * @package   sweelix.yii2.image.web
- * @since     XXX
+ * @since     1.0.0
  */
 class Image extends BaseImage {
 	/**
@@ -42,7 +42,7 @@ class Image extends BaseImage {
 	 * @param string  $base64Data image data base64 encoded
 	 *
 	 * @return Image
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public function __construct($fileImage, $quality=null, $ratio=null, $base64Data=null) {
 		try {
@@ -72,7 +72,7 @@ class Image extends BaseImage {
 	 * @param string  $base64Data image data base64 encoded
 	 *
 	 * @return Image
-	 * @since  XXX
+	 * @since  1.0.0
 	 */
 	public static function create($fileImage, $quality=null, $ratio=null, $base64Data=null) {
 		return new static($fileImage, $quality, $ratio, $base64Data);
