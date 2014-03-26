@@ -56,7 +56,7 @@ use Yii;
  * @package   sweelix.yii2.components
  * @since     XXX
  */
-class ImageConfig extends Component {
+class Config extends Component {
 	/**
 	 * @var integer define caching mode @see Image for further details
 	 */
