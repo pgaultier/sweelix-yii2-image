@@ -51,6 +51,7 @@ class Image extends BaseImage {
 				throw new Exception('sweelix\yii2\image\Config has not been defined');
 			}
 			static::$cachePath = $component->getCachePath();
+			static::$cacheUrl = $component->getCacheUrl();
 			$this->cachingMode = $component->getCachingMode();
 			$this->setQuality($component->getQuality());
 			self::$urlSeparator = $component->getUrlSeparator();

@@ -130,6 +130,30 @@ class Config extends Component {
 		return Yii::getAlias($this->_cachePath);
 	}
 	/**
+	 * @var string define default cache url
+	 */
+	private $_cacheUrl = '@web/cache';
+	/**
+	 * Cache path setter @see Image::cacheUrl for further details
+	 *
+	 * @param string $cacheUrl real url (not namespace url)
+	 *
+	 * @return void
+	 * @since  XXX
+	 */
+	public function setCacheUrl($cacheUrl) {
+	    $this->_cacheUrl = $cacheUrl;
+	}
+	/**
+	 * Cache url getter @see Image::cacheUrl for further details
+	 *
+	 * @return string
+	 * @since  XXX
+	 */
+	public function getCacheUrl() {
+	    return Yii::getAlias($this->_cacheUrl);
+	}
+	/**
 	 * @var string this image is used when original image cannot be found
 	 */
 	private $_errorImage = '@webroot/error.jpg';
