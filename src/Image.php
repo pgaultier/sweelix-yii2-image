@@ -56,7 +56,7 @@ class Image extends BaseImage {
 			$this->setQuality($component->getQuality());
 			self::$urlSeparator = $component->getUrlSeparator();
 			self::$errorImage = $component->getErrorImage();
-			parent::__construct($fileImage, $quality, $ratio, $base64Data);
+			parent::__construct(Yii::getAlias($fileImage), $quality, $ratio, $base64Data);
 		} catch(Exception $e) {
 			Yii::error($e->getMessage(), __METHOD__);
 			throw $e;
